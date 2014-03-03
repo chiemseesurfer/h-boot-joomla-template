@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.1" type="template" client="site">
+	<name>Hboot-koehle</name>
+	<version>2.6</version>
+	<creationDate>12/5/2013</creationDate>
+	<author>Max Oberberger</author>
+	<authorEmail>admin@oberbergers.de</authorEmail>
+	<copyright>Copyright (C) 2013 - 2014 ThESCOM, Inc. All rights reserved.</copyright>
+	<description>H_BOOT_XML_DESCRIPTION</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>img</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+		<folder>less</folder>
+	</files>
+	<positions>
+		<position>banner</position>
+		<position>debug</position>
+		<position>position-0</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-6</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>position-11</position>
+		<position>position-12</position>
+		<position>position-13</position>
+		<position>position-14</position>
+		<position>footer</position>
+	</positions>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.h-boot.ini</language>
+		<language tag="en-GB">en-GB/en-GB.h-boot.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="templateColor" class="" type="color" default="#08C"
+					label="H_BOOT_COLOR_LABEL"
+					description="H_BOOT_COLOR_DESC" />
+
+				<field name="templateBackgroundColor" class="" type="color" default="#F4F6F7"
+					label="H_BOOT_BACKGROUND_COLOR_LABEL"
+					description="H_BOOT_BACKGROUND_COLOR_DESC" />
+
+				<field name="logoFile" class="" type="media" default=""
+					label="H_BOOT_LOGO_LABEL"
+					description="H_BOOT_LOGO_DESC" />
+
+				<field name="sitetitle"  type="text" default=""
+					label="JGLOBAL_TITLE"
+					description="JFIELD_ALT_PAGE_TITLE_LABEL"
+					filter="string" />
+
+				<field name="sitedescription"  type="text" default=""
+					label="JGLOBAL_DESCRIPTION"
+					description="JGLOBAL_SUBHEADING_DESC"
+					filter="string" />
+
+				<field name="googleFont"
+					type="radio"
+					class="btn-group"
+					default="1"
+					label="H_BOOT_FONT_LABEL"
+					description="H_BOOT_FONT_DESC"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="googleFontName" class="" type="text" default="Open+Sans"
+					label="H_BOOT_FONT_NAME_LABEL"
+					description="H_BOOT_FONT_NAME_DESC" />
+
+				<field name="fluidContainer"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="H_BOOT_FLUID_LABEL"
+					description="H_BOOT_FLUID_DESC"
+				>
+					<option value="0">H_BOOT_STATIC</option>
+					<option value="1">H_BOOT_FLUID</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
